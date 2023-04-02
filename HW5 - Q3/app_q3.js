@@ -16,3 +16,14 @@ function getData() {
     users.push(seprateData(data));
     return true;
 }
+
+function sortAge() {
+    users.sort((a, b) => {
+        return a.age - b.age;
+    });
+
+    console.log("Sorted Information Sorted By Age :");
+    console.log(...users);
+}
+
+sortAge()
