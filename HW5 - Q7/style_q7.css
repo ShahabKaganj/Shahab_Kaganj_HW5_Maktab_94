@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#ffa6f8, #e05ffa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+
+}
+
+.mainBox {
+    width: 400px;
+    height: 400px;
+    background-color: #ab58ce;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(32, 32, 32, 0.5);
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.userPhoto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(67, 66, 66);
+}
+
+.userPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.job {
+    transform: translate(0, 10px);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.Name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.expresion {
+    direction: "ltr";
+    font-family: "yekan bakh";
+    font-size: 1rem;
+}
+
+.photoBox {
+    display: flex;
+    gap: 20px;
+}
+
+.app {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(111, 103, 103);
+    background-color: white;
+    padding: 8px;
+}
+
+.app img {
+    width: 100%;
+    height: 100%;
+}
