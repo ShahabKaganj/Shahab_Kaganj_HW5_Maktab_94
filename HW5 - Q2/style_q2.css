@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Estedad SemiBold";
+    background-image: url(foooot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#div-main {
+    width: 24rem;
+    height: 12rem;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(162, 162, 162, 0.22);
+    border-radius: 10px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.div-child {
+    display: flex;
+    justify-content: center;
+}
+
+.counter-value {
+    font-size: 60px;
+    margin-top: 10px;
+    font-weight: 1000;
+}
+
+.button {
+    margin: 20px auto;
+    color: #ffffff;
+    background-color: #be0000;
+    font-size: 14px;
+    border-width: 0;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #273f6d;
+    cursor: pointer;
+}
