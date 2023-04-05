@@ -71,3 +71,42 @@ const pedometer = {
 }
 
 pedometer.increase().read().reset().read();
+
+
+// The pedometer app ---------------------------
+
+let counterElem = document.getElementById("counterValue");
+
+function increase() {
+    let preValue = counterElem.textContent;
+    let newValue = parseInt(preValue) + 1;
+
+    if (newValue > 0) {
+        counterElem.style.color = "#012468";
+    } else if (newValue < 0) {
+        counterElem.style.color = "#be0000";
+    } else {
+        counterElem.style.color = "#272727";
+    }
+    counterElem.textContent = newValue;
+}
+
+function decrease() {
+    let preValue = counterElem.textContent;
+    let newValue = parseInt(preValue) - 1;
+
+    if (newValue > 0) {
+        counterElem.style.color = "#012468";
+    } else if (newValue < 0) {
+        counterElem.style.color = "#be0000";
+    } else {
+        counterElem.style.color = "#272727";
+    }
+    counterElem.textContent = newValue;
+}
+
+function reset() {
+    let counterValue = 0;
+    counterElem.textContent = counterValue;
+    counterElem.style.color = "white";
+}
